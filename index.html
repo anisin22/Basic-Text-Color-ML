@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brain/0.6.3/brain.min.js" integrity="sha512-xP328xty9tPILO3Fn/uaxUPbKzxgkpFlfNT3zRDrr6tYEN0qVyP++TlyrP4oQer9MdvgLAIc5V/g+qar6Rt5DA==" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  
+<style>
+  #color ,#work{
+    width: 300px;
+    height: 300px;
+    border: 7px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .white {
+    color: white;
+  }
+  .print-data {
+    width: 310px;
+    height: 200px;
+    overflow-y: scroll;
+}
+.hi{
+  position: absolute;
+  right: 5%;
+  
+}
+.ho{
+  position: absolute;
+  left: 5%;
+}
+</style>
+  
+</head>
+<body>
+  <div class="ho">
+    <h1>Training</h1>
+  <div id="color">
+    <div class="white">White Text</div>
+    <div>Black Text</div>
+    <div id="guess">Guess Text</div>
+  </div>
+
+  <button id="white-button">White</button>
+  <button id="black-button">Black</button>
+  <button id="print-button">Print Training Data</button>
+  <br>
+  <textarea id="print-data" class="print-data">Data:</textarea>
+  <br>
+  <br>
+  </div>
+  <div class="hi">
+    <h1>Working Model</h1>
+    <div id="work">
+      <div id="workguess">Best color Text to use on this background</div>
+    </div>
+    <button id="change">Change Background</button>
+    <br>
+    
+  </div>
+  
+
+</body>
+</html>
